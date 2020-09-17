@@ -26,12 +26,29 @@ header img {
     margin-top: 10px;
 }
 
+.genre-select {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px 0;
+  color: #fff;
+}
+
+.genre-select label {
+  margin-right: 10px;
+}
+
+.genre-select select {
+  font-size: 20px;
+  padding: 5px 10px;
+}
+
 .cds-container {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-    padding: 100px 0;
+    padding: 0 0 100px;
 }
 
 .cd {
@@ -65,4 +82,43 @@ header img {
 
 .cd span.year {
     color: grey;
+}
+
+@media screen and (max-width:1100px) {
+  .container {
+    width: 800px;
+  }
+
+  .cd {
+    flex-basis: 29%;
+    margin: 15px 2%;
+    height: 400px;
+  }
+}
+
+@media screen and (max-width: 820px) {
+  .container {
+    width: 100%;
+  }
+
+  .cd {
+    flex-basis: 46%;
+    margin: 15px 2%;
+  }
+
+  .cd img {
+    height: 200px;
+  }
+}
+
+@media screen and (max-width: 590px) {
+
+  .cd {
+    flex-basis: 98%;
+    margin: 15px 2%;
+  }
+
+  .cd img {
+    height: 250px;
+  }
 }
